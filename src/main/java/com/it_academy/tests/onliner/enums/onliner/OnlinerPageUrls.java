@@ -1,4 +1,4 @@
-package com.it_academy.onliner.enums.onliner;
+package com.it_academy.tests.onliner.enums.onliner;
 
 public enum OnlinerPageUrls {
     HOME_PAGE("https://www.onliner.by/");

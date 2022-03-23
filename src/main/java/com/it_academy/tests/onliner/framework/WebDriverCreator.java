@@ -1,4 +1,4 @@
-package com.it_academy.onliner.framework;
+package com.it_academy.tests.onliner.framework;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 

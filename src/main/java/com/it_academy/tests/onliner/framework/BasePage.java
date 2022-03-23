@@ -1,4 +1,4 @@
-package com.it_academy.onliner.framework;
+package com.it_academy.tests.onliner.framework;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;

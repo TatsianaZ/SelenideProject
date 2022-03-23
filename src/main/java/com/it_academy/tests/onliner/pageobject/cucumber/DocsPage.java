@@ -1,7 +1,7 @@
-package com.it_academy.onliner.pageobject.cucumber;
+package com.it_academy.tests.onliner.pageobject.cucumber;
 
 import com.codeborne.selenide.Condition;
-import com.it_academy.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.framework.BasePage;
 
 import java.time.Duration;
 

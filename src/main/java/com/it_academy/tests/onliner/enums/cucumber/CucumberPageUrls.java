@@ -1,4 +1,4 @@
-package com.it_academy.onliner.enums.cucumber;
+package com.it_academy.tests.onliner.enums.cucumber;
 
 public enum CucumberPageUrls {
     HOME_PAGE("https://cucumber.io/");

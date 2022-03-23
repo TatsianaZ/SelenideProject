@@ -1,10 +1,14 @@
-package com.it_academy.onliner;
+package com.it_academy.tests.onliner;
 
-import com.it_academy.onliner.pageobject.onliner.HomePage;
-import com.it_academy.onliner.pageobject.onliner.OnlinerHeader;
+import com.it_academy.listeners.AllureListener;
+import com.it_academy.tests.BaseTest;
+import com.it_academy.tests.onliner.pageobject.onliner.HomePage;
+import com.it_academy.tests.onliner.pageobject.onliner.OnlinerHeader;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class OnlinerNavigationTest {
+@Listeners(AllureListener.class)
+public class OnlinerNavigationTest extends BaseTest {
 
     @Test
     public void testUserIsAbleToNavigateToProductPageViaCatalog() {

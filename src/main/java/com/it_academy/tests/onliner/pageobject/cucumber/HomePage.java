@@ -1,13 +1,13 @@
-package com.it_academy.onliner.pageobject.cucumber;
+package com.it_academy.tests.onliner.pageobject.cucumber;
 
 import com.codeborne.selenide.Condition;
-import com.it_academy.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.framework.BasePage;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
-import static com.it_academy.onliner.enums.cucumber.CucumberPageUrls.HOME_PAGE;
+import static com.it_academy.tests.onliner.enums.cucumber.CucumberPageUrls.HOME_PAGE;
 import static java.lang.String.format;
 
 public class HomePage extends BasePage {

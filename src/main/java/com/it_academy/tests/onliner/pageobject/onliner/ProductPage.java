@@ -1,11 +1,12 @@
-package com.it_academy.onliner.pageobject.onliner;
+package com.it_academy.tests.onliner.pageobject.onliner;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import com.it_academy.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.framework.BasePage;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class ProductPage extends BasePage {
@@ -13,7 +14,7 @@ public class ProductPage extends BasePage {
             $x("//h1[contains(@class, ' js-schema-header_title')]");
 
     public ProductPage assertProductPageTitleIsDisplayed() {
-        productPageTitle.shouldBe(Condition.visible, Duration.ofSeconds(10));
+        productPageTitle.shouldBe(visible, Duration.ofSeconds(10));
         return this;
     }
 }

@@ -1,14 +1,14 @@
-package com.it_academy.onliner.pageobject.onliner;
+package com.it_academy.tests.onliner.pageobject.onliner;
 
 import com.codeborne.selenide.SelenideElement;
-import com.it_academy.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.framework.BasePage;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
-import static com.it_academy.onliner.enums.onliner.OnlinerPageUrls.HOME_PAGE;
+import static com.it_academy.tests.onliner.enums.onliner.OnlinerPageUrls.HOME_PAGE;
 
 public class HomePage extends BasePage {
     private static final SelenideElement tilesOuterComponent =

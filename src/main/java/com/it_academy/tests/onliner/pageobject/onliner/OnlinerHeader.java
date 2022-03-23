@@ -1,6 +1,6 @@
-package com.it_academy.onliner.pageobject.onliner;
+package com.it_academy.tests.onliner.pageobject.onliner;
 
-import com.it_academy.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.framework.BasePage;
 
 import java.time.Duration;
 

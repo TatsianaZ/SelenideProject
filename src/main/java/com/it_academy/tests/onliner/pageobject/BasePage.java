@@ -1,7 +1,8 @@
-package com.it_academy.tests.onliner.framework;
+package com.it_academy.tests.onliner.pageobject;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import com.it_academy.tests.onliner.framework.SelenideWebDriverDiscovery;
 
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.open;

@@ -1,8 +1,7 @@
 package com.it_academy.tests.onliner.pageobject.onliner;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import com.it_academy.tests.onliner.framework.BasePage;
+import com.it_academy.tests.onliner.pageobject.BasePage;
 
 import java.time.Duration;
 

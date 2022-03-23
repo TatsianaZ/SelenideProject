@@ -7,8 +7,6 @@ public final class DriverCreatorFactory {
 
     public static WebDriverCreator getDriverCreator(String driverType) {
         switch (driverType) {
-            case "chrome":
-                return new ChromeDriverCreator();
             case "firefox":
                 return null;
             default:

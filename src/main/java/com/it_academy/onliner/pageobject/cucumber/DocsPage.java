@@ -1,4 +1,4 @@
-package com.it_academy.onliner.pageobject;
+package com.it_academy.onliner.pageobject.cucumber;
 
 import com.codeborne.selenide.Condition;
 import com.it_academy.onliner.framework.BasePage;

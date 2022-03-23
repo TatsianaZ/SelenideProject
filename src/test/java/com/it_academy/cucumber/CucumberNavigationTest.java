@@ -1,11 +1,9 @@
-package com.it_academy.onliner;
+package com.it_academy.cucumber;
 
-import com.it_academy.onliner.pageobject.HomePage;
+import com.it_academy.onliner.pageobject.cucumber.HomePage;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-
-public class NavigationTest {
+public class CucumberNavigationTest {
 
     @Test
     public void testDocsPageNavigation() {
@@ -13,10 +11,5 @@ public class NavigationTest {
                 .clickOnMenuItem("Docs")
                 .clickOnGherkinSyntaxSubMenuItem()
                 .assertPageWithTitleDisplayed("Gherkin Syntax");
-    }
-
-    @Test
-    public void testOnlinerNavigation() {
-        open("https://www.onliner.by/");
     }
 }

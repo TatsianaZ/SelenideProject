@@ -1,4 +1,4 @@
-package com.it_academy.onliner.pageobject;
+package com.it_academy.onliner.pageobject.cucumber;
 
 import com.codeborne.selenide.Condition;
 import com.it_academy.onliner.framework.BasePage;
@@ -7,17 +7,17 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
+import static com.it_academy.onliner.enums.cucumber.CucumberPageUrls.HOME_PAGE;
 import static java.lang.String.format;
 
 public class HomePage extends BasePage {
-    private static final String CUCUMBER_URL = "https://cucumber.io/";
 
     private static final String TEXT_PATTERN = "%s[contains(text(), '%s')]";
     private static final String MENU_SECTION = "//*[contains(@class, 'nav-link')]";
     private static final String CHILD_MENU_ITEM = "//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')]";
 
     public HomePage navigateToCucumberHomePage() {
-        open(CUCUMBER_URL);
+        open(HOME_PAGE.getUrl());
         return this;
     }
 

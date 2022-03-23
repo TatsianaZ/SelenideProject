@@ -23,7 +23,7 @@ public class HomePage extends BasePage {
 
     public HomePage clickOnMenuItem(String menu) {
         $x(format(TEXT_PATTERN, MENU_SECTION, menu))
-                .shouldBe(Condition.visible, Duration.ofSeconds(10))
+                .shouldBe(Condition.visible, Duration.ofSeconds(60))
                 .click();
         return this;
     }

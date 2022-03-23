@@ -13,10 +13,8 @@ public class OnlinerHeader extends BasePage {
             "//*[contains(@class, 'main-navigation__text') and contains(text(), '%s')]";
 
     public void clickOnMainNavigationLink(String link) {
-        $x(format(MAIN_NAVIGATION_LINK_XPATH_PATTERN, link))
-                .shouldBe(visible, Duration.ofSeconds(10))
-                .scrollIntoView(true)
-                .click();
+        clickOnElementViaJs($x(format(MAIN_NAVIGATION_LINK_XPATH_PATTERN, link))
+                .shouldBe(visible, Duration.ofSeconds(10)));
     }
 
     public CatalogPage clickOnCatalogNavigationLink() {

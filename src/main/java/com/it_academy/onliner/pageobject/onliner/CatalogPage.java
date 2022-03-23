@@ -17,26 +17,20 @@ public class CatalogPage extends BasePage {
             "//*[contains(@class, 'item_active')]//a[.//*[contains(text(), '%s')]]";
 
     public CatalogPage clickOnCatalogClassifierLink(String link) {
-        $x(format(CATALOG_CLASSIFIER_LINK_XPATH_PATTERN, link))
-                .shouldBe(visible, Duration.ofSeconds(10))
-                .scrollIntoView(true)
-                .click();
+        clickOnElementViaJs($x(format(CATALOG_CLASSIFIER_LINK_XPATH_PATTERN, link))
+                .shouldBe(visible, Duration.ofSeconds(10)));
         return this;
     }
 
     public CatalogPage selectCategory(String category) {
-        $x(format(CATALOG_CLASSIFIER_CATEGORY_XPATH_PATTERN, category))
-                .shouldBe(visible, Duration.ofSeconds(10))
-                .scrollIntoView(true)
-                .click();
+        clickOnElementViaJs($x(format(CATALOG_CLASSIFIER_CATEGORY_XPATH_PATTERN, category))
+                .shouldBe(visible, Duration.ofSeconds(10)));
         return this;
     }
 
     public ProductPage selectProduct(String product) {
-        $x(format(PRODUCT_LINK_XPATH_PATTERN, product))
-                .shouldBe(visible, Duration.ofSeconds(10))
-                .scrollIntoView(true)
-                .click();
+        clickOnElementViaJs($x(format(PRODUCT_LINK_XPATH_PATTERN, product))
+                .shouldBe(visible, Duration.ofSeconds(10)));
         return new ProductPage();
     }
 }

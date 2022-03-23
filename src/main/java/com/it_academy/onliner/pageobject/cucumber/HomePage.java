@@ -22,24 +22,20 @@ public class HomePage extends BasePage {
     }
 
     public HomePage clickOnMenuItem(String menu) {
-        $x(format(TEXT_PATTERN, MENU_SECTION, menu))
-                .shouldBe(Condition.visible, Duration.ofSeconds(60))
-                .click();
+        clickOnElementViaJs($x(format(TEXT_PATTERN, MENU_SECTION, menu))
+                .shouldBe(Condition.visible, Duration.ofSeconds(60)));
         return this;
     }
 
     public HomePage clickOnMenuChildItem(String childMenu) {
-        $x(format(format(TEXT_PATTERN, CHILD_MENU_ITEM, childMenu)))
-                .shouldBe(Condition.visible, Duration.ofSeconds(10))
-                .click();
+        clickOnElementViaJs($x(format(format(TEXT_PATTERN, CHILD_MENU_ITEM, childMenu)))
+                .shouldBe(Condition.visible, Duration.ofSeconds(10)));
         return this;
     }
 
     public DocsPage clickOnGherkinSyntaxSubMenuItem() {
-        $x(format(format(TEXT_PATTERN, CHILD_MENU_ITEM, "Gherkin Syntax")))
-                .shouldBe(Condition.visible, Duration.ofSeconds(10))
-                .click();
+        clickOnElementViaJs($x(format(format(TEXT_PATTERN, CHILD_MENU_ITEM, "Gherkin Syntax")))
+                .shouldBe(Condition.visible, Duration.ofSeconds(10)));
         return new DocsPage();
     }
-
 }

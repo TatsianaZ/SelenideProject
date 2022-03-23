@@ -29,9 +29,7 @@ public class HomePage extends BasePage {
     }
 
     public CatalogPage clickOnCatalogLink() {
-        catalogLink.shouldBe(visible, Duration.ofSeconds(10))
-                .scrollIntoView(true)
-                .click();
+        clickOnElementViaJs(catalogLink.shouldBe(visible, Duration.ofSeconds(10)));
         return new CatalogPage();
     }
 }

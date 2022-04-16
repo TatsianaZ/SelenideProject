@@ -129,6 +129,18 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-java3</artifactId>
+            <version>3.212.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

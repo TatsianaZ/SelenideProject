@@ -7,6 +7,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 import static java.lang.String.format;
+import static java.time.Duration.ofSeconds;
 
 public class OnlinerHeader extends BasePage {
     private static final String MAIN_NAVIGATION_LINK_XPATH_PATTERN =
@@ -14,7 +15,7 @@ public class OnlinerHeader extends BasePage {
 
     public void clickOnMainNavigationLink(String link) {
         clickOnElementViaJs($x(format(MAIN_NAVIGATION_LINK_XPATH_PATTERN, link))
-                .shouldBe(visible, Duration.ofSeconds(10)));
+                .shouldBe(visible, ofSeconds(60)));
     }
 
     public CatalogPage clickOnCatalogNavigationLink() {

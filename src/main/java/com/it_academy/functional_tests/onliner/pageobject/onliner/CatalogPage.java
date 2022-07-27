@@ -20,21 +20,21 @@ public class CatalogPage extends BasePage {
     @Step("Click on catalog classifier link {link}")
     public CatalogPage clickOnCatalogClassifierLink(String link) {
         clickOnElementViaJs($x(format(CATALOG_CLASSIFIER_LINK_XPATH_PATTERN, link))
-                .shouldBe(visible, Duration.ofSeconds(10)));
+                .shouldBe(visible, Duration.ofSeconds(60)));
         return this;
     }
 
     @Step("Select category {category}")
     public CatalogPage selectCategory(String category) {
         clickOnElementViaJs($x(format(CATALOG_CLASSIFIER_CATEGORY_XPATH_PATTERN, category))
-                .shouldBe(visible, Duration.ofSeconds(10)));
+                .shouldBe(visible, Duration.ofSeconds(60)));
         return this;
     }
 
     @Step("Select product {product}")
     public ProductPage selectProduct(String product) {
         clickOnElementViaJs($x(format(PRODUCT_LINK_XPATH_PATTERN, product))
-                .shouldBe(visible, Duration.ofSeconds(10)));
+                .shouldBe(visible, Duration.ofSeconds(60)));
         return new ProductPage();
     }
 }
